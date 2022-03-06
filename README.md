@@ -23,25 +23,31 @@ Project name: entreweb
 - create interfaces for repository ex. UserRepository, RoleRepository
 - create interface service ex. UserService and class service UserServiceImpl for implementation
 
+
 3. Database set-up
 - add database in the database application
 - configure in resources in application.properties the sql connection
 
+
 4. Create API
 - create user controller (or resource)
+
 
 5. Authentication and authorization
 - authentication verifies if you are who you say you are (access to the website) by using login form, http authentication and custom authentication method
 - authorization decides if you have permission to access a resource(access to the specific place in a website) by using Access Control URLs and Access Control List (ACLs)
 
+
 6. Spring Security
 - create security configuration with password encoder
 - in the user service implementation add method “loadUserByUserName”
+
 
 7. Authentication Filter
 - verify person
 - create authorization filter and add it to the http configuration
 - give a token
+
 
 8. Tests
 - for beginning tests user – user, password – in spring log
@@ -49,9 +55,11 @@ Project name: entreweb
 - in jwt.io paste a token and check the encoded info
 - check response
 
+
 9. Authorization filter
 - decode and verify a token
 - add filter to the Security Configuration (SecurityConfig)
+
 
 10. Handle the refresh token
 - when the time of an access token expires then take a refresh token, valid it and get new access token
